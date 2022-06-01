@@ -1,0 +1,180 @@
+@import '../../scss/media';
+@import '../../scss/mixin';
+@import '../../scss/varible';
+
+
+
+
+    
+.nav-img{
+
+  
+
+    .img{
+
+        height: 100%;
+
+      img{
+          width: 100%;
+          height: 100%;
+          background-color: $lightgrey-color;
+          object-fit: cover;
+           
+      }
+
+  
+    
+    }
+
+    .ptitle{
+        display: block;
+        background-color: $yollow-color;
+        padding: 5px;
+        font-size: 1.7vmax;
+        text-align: center;
+        color:  $light-color;
+        text-transform: uppercase;
+        @include respond-below(sm){
+            font-size: 3vmax;
+          }
+    }
+
+
+ 
+  
+ }
+
+ .nav-cp{
+    text-align: start;
+    display: block;
+    padding: 5px;
+    font-size: 1vmax;
+    margin-bottom: 50px;
+    color: $light-color;
+    @include respond-below(sm){
+        font-size: 2vmax;
+      }
+     
+    
+
+}
+
+.navbar{
+    @include flex(center, space-between , column, 0);
+    
+  
+    @include respond-below(sm){
+        display: none;
+      }
+
+ 
+
+     .nav-link{
+         
+      
+       
+        
+   }
+
+ 
+ 
+
+
+
+   
+ 
+        
+    
+
+}
+
+  
+
+
+.movile-nav{
+    position: fixed;
+    width: 60%;
+    background-color: $heading-color;
+    height: 100vh;
+    right: 0;
+    z-index: 100;
+    @include flex(center, space-between , column, 0);
+    
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 100%;
+        background-color: rgba(37, 37, 37, 0.418);
+    }
+    
+
+}
+
+.gi1{
+    color: $yollow-color;
+    font-size: 30px;
+    position: fixed;
+    right: 23px;
+    top: 10px;
+display: none;
+z-index: 5;
+cursor: pointer;
+    @include respond-below(sm){
+        display: flex;
+      }
+   
+}
+
+.im1{
+   
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: $heading-color;
+    z-index: 3;
+    cursor: pointer;
+   
+}
+
+
+
+
+.main-link{
+   
+    @include flex(start, start , column, 10px);
+    @include respond-below(sm){
+        margin-left: 14px;
+        margin-top: 40px;
+
+      }
+
+     li{
+         font-size: 1.5vmax;
+         color: $lightgrey-color;
+         list-style-type: none;
+         @include flex(center, start , row, 5px);
+         transition: all .5s ease-in-out;
+         @include respond-below(sm){
+            font-size: 3vmax;
+          }
+    
+         cursor: pointer;
+          &:hover{
+              color: $yollow-color;
+          }
+
+        svg{
+        
+        }
+
+        a{
+            
+display: block;
+ width: 100%;
+        }
+     }
+
+
+}

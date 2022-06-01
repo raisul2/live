@@ -1,0 +1,167 @@
+@import '../../scss/media';
+@import '../../scss/mixin';
+@import '../../scss/varible';
+@import '../../scss/restext';
+
+
+.main-about{
+  
+     background-color: $light-color; 
+     @include flex(center,center,column, 0);
+     width: 100%;
+
+}
+
+
+
+.about-box-img{
+      overflow: hidden;
+    @include flex(start, space-between, row, 30px);
+    margin: 100px 30px 100px 30px;
+    @include  respond-below(sm){
+
+        @include flex(center, space-between, column, 45px);
+        margin: 10px;
+        
+      }
+
+     
+  
+    
+     .about-left{
+      
+         @include box(70vh, 40%, $padding-icon, $yollow-color, $border-redus);
+         background-color: $white-color;
+         position: relative;
+    
+         @include  respond-below(sm){
+
+          height: 60vh;
+          width: 100%;
+          overflow: hidden;
+            
+          }
+         img{
+             position: absolute;
+             bottom: 0;
+             object-fit: contain;
+             height: 100%;  
+             width: 100%;
+             
+         }
+     }
+     
+      
+}
+
+
+.about-text{
+   height: 70vh;
+   width: 60%;
+    @include flex(start, space-between, column, 0);
+
+    @include  respond-below(sm){
+         gap:30px;
+        height: 100%;
+        width: 100%;
+    } 
+
+    .about-top{
+        @include flex(start, space-between, column, 10px);
+
+        h1{
+            color: $lightgrey-color;
+            font-weight: 900;
+        }
+        h2{
+            font-weight: 400;
+        }
+        p{
+            font-size: 85%;
+            color:$text-color-2;
+            font-weight: 100;
+
+        }
+    }
+
+
+
+    .about-bottom{
+        
+        justify-self: end;
+        @include flex(start, space-between, row, 15px);
+        
+        @include  respond-below(sm){
+            @include flex(start, space-between, column, 10px);
+
+            height: 100%;
+            width: 100%;
+        }  
+        div{
+            width: 100%;
+            @include flex(start, space-between, column, 15px);
+
+            span{
+                @include flex(start, space-between, row, 5px);
+
+                svg{
+                    color: $text-color-2;
+                }
+
+                p{
+            font-size: 85%;
+            color:$text-color-2;
+            font-weight: 100;
+
+                }
+            }
+        }
+    }
+
+} 
+
+
+.work-about{
+    @include flex(center, space-between, row, 10px);
+    width: 100%;
+    padding: 3%;
+    @include  respond-below(sm){
+        @include flex(center, space-between, column, 10px);
+        padding: 10px;
+
+    }
+
+    .work-box{
+      
+        @include box(120px, 400px, $padding-icon, $yollow-color, $border-redus);
+        background-color: $white-color;
+        @include flex(center, center, row, 10px);
+        box-shadow: $box-shadow;
+        @include  respond-below(sm){
+            height: 100px;
+            width: 70%;
+            padding: 5px;
+            @include flex(center, start, row, 10px);
+            
+        }
+        .work-icon{
+            @include  respond-below(sm){
+
+                margin-left: 50px;
+            }
+            svg{
+                font-size: 200%;
+                align-self: flex-start;
+                color: $text-color-2;
+                
+            }
+        }
+
+        .work-text{
+            @include flex(start, space-between, column, 10px);
+            font-size: 60% ;
+        }
+
+    }
+
+}

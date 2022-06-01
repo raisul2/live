@@ -1,0 +1,97 @@
+@import '../../scss/media';
+@import '../../scss/mixin';
+@import '../../scss/varible';
+
+
+
+   .blogpage{
+       
+        background-color: $white-color;
+padding-bottom: 40px;
+padding-top: 30px;   
+        
+   .text{
+       h1{
+           color: $lightgrey-color;
+           text-align: center;
+       }
+
+       h3{
+           text-align: center;
+       }
+   }
+
+
+   .post{
+       margin: 100px 30px 100px 30px;
+    @include flex(center,center, row ,20px);
+    @include  respond-below(sm){
+        @include flex(center,center, column ,20px);
+        margin: 20px;
+      
+
+    }    
+   }
+
+
+
+
+   }
+
+
+   
+
+
+   .blog-box{
+   
+       border-radius: $border-redus;
+    width: 40%;
+    background-color: $light-color;
+    padding: 20px;
+    @include flex(center,center, column ,50px);
+    @include  respond-below(sm){
+        width: 100%;
+    }
+
+     .img{
+         
+        height: 30vh;
+       width: 100%;
+       img{
+           height: 100%;
+           width: 100%;
+object-fit: cover;
+       }
+
+
+     }
+
+     .text{
+
+        .title{
+            margin-bottom: 20px;
+            @include flex(center,space-between, row,0);
+            
+            
+            span{
+                @include flex(start ,center, row,5px);
+                color: $text-color-2;
+                font-size: 60%;
+             
+            }
+
+
+
+        }
+
+        p{
+            font-size: 70%;
+
+        }
+
+     }
+
+
+
+   }
+

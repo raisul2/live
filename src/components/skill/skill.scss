@@ -1,0 +1,44 @@
+@import '../../scss/media';
+@import '../../scss/mixin';
+@import '../../scss/varible';
+@import '../../scss/restext';
+
+
+
+    .skil-wrap{
+     
+        @include flex(start, space-between, column, 30px);
+        width: 90%;
+    }
+
+
+
+
+
+.skills-box{
+    @include flex(start, space-between, column, 10px);
+    width: 100%;
+    
+    .text{
+         @include flex(start, space-between, row, 0);
+       width: 100%;
+       h5{
+          color: $text-color-2;
+       }
+     }
+
+     .line{
+
+          height: 1vh;
+          border-radius: $border-redus;
+          background-color: $light-color;
+          width: 100%; 
+          .line-color{
+              height: inherit;
+              border-radius: $border-redus;
+            
+              background-color: $yollow-color;
+              
+          }
+     }
+}

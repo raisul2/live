@@ -1,0 +1,80 @@
+@import '../../scss/media';
+@import '../../scss/mixin';
+@import '../../scss/varible';
+
+.question{
+   
+background-color: $white-color;
+padding-bottom: 30px;
+padding-top: 20px;
+
+h1{
+    text-align: center;
+    color: $lightgrey-color;
+
+
+
+}
+
+h3{
+    text-align: center;
+
+}
+
+}
+
+
+.box-q{
+    @include flex(center, center, column, 15px);
+    margin: 30px 120px 30px 120px;
+    height: auto;
+    @include  respond-below(sm){
+        margin: 10px;
+    }
+  
+    border-radius: $border-redus-2;
+position: relative;
+transition: all .6s ease-in-out;
+    
+
+     .top{
+         width: 100%;
+         height: 10vh;
+         background-color: $dark-white;
+         border-radius: $border-redus-2;
+         padding: 12px;
+         @include flex(center,space-between, row, 20px);
+         
+         svg{
+             font-size: 15px;
+             transition: all .6s ease-in-out;
+         }
+         
+         h4{
+             font-weight: 300;
+             font-size: 80%;
+         }
+     }
+
+
+     .bop{
+         background-color: transparent;
+         padding: 6px;
+     }
+
+     .bottom{
+         font-size: 80%;
+         color: $text-color-2;
+         line-height: 30px;
+         width: 100%;
+         text-align: start;
+         padding: 10px;
+         transition: all .6s ease-in-out;
+         
+
+
+     }
+
+}
+
+

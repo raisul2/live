@@ -1,0 +1,102 @@
+@import '../../scss/media';
+@import '../../scss/mixin';
+@import '../../scss/varible';
+
+
+
+.price{
+   
+    background-color: $light-color;
+
+padding-top: 30px;
+padding-bottom: 30px;
+
+    .text{
+margin-bottom: 60px;
+        h1{
+            color: $lightgrey-color;
+            text-align: center
+        }
+        h3{
+            text-align: center
+        }
+    }
+
+}
+
+.price-box{
+    
+    margin: 50px;
+    @include flex(center,center, row,20px);
+    @include  respond-below(sm){
+    @include flex(center,center, column ,20px);
+      margin: 20px    
+}
+}
+
+
+.pp-box{
+    @include flex(start,start,column,20px);
+width: calc(100% / 3.5);
+padding: 30px;
+margin: 20px;
+
+@include  respond-below(sm){
+    width: 100%;
+}
+
+background-color: $white-color;
+border-radius: $border-redus-2;
+
+.icons{
+    svg{
+        color: $yollow-color;
+       font-size: 150%;
+        justify-self: center;
+    }
+}
+
+h1{
+    color: $yollow-color;
+}
+
+h4{
+    color: $text-color-2;
+    font-size:70%;
+}
+
+p{
+    color: $text-color-2;
+ font-size: 70%;
+ line-height: 30px;
+
+}
+
+.title-bo{
+
+    margin-left: 20px;
+    
+    span{
+        @include flex(center,start,row,10px);
+        svg{
+            color: $yollow-color;
+            font-size: 30%;
+        }
+    }
+    
+}
+
+
+ 
+
+    button{
+        border-radius: 100px 0 100px 100px ;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 15px;
+        width: 130px;
+        text-align: center;
+        background-color: transparent;
+    }
+
+}
